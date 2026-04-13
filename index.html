@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artisan Profile - Rashida Begum | Nakshi Kantha</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Lora', Georgia, serif;
+    background: #faf6f0;
+    color: #2c1810;
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+
+  .header-bar {
+    background: #5a2d0c;
+    padding: 14px 20px;
+    text-align: center;
+  }
+  .header-bar h1 {
+    font-family: 'Playfair Display', serif;
+    color: #e8d5c0;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .header-bar .tagline {
+    color: #c4956a;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 2px;
+  }
+
+  .artisan-hero {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #d4b896, #c4956a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .artisan-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #faf6f0;
+    background: #e8d5c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #5a2d0c;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  .artisan-name {
+    text-align: center;
+    padding: 18px 20px 6px;
+  }
+  .artisan-name h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #5a2d0c;
+    font-weight: 700;
+  }
+  .artisan-name .location {
+    font-size: 14px;
+    color: #8b6f47;
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+  .artisan-name .location::before {
+    content: '\u25C8 ';
+    color: #c4956a;
+  }
+
+  .verified-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #2e7d32;
+    letter-spacing: 1px;
+  }
+  .verified-badge .check {
+    background: #2e7d32;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+  }
+
+  .divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #c4956a, transparent);
+    margin: 12px auto;
+  }
+
+  .section {
+    padding: 12px 24px;
+  }
+  .section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #5a2d0c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #d4b896;
+    padding-bottom: 4px;
+  }
+  .section p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #3d2b1f;
+  }
+
+  .stats-bar {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, #f5ece2, #f0e4d6);
+    border-top: 1px solid #d4b896;
+    border-bottom: 1px solid #d4b896;
+    padding: 14px 20px;
+    margin: 10px 0;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat .value {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #5a2d0c;
+    display: block;
+  }
+  .stat .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8b6f47;
+    margin-top: 2px;
+  }
+
+  .support-btn {
+    display: block;
+    margin: 16px 24px;
+    padding: 14px;
+    background: #5a2d0c;
+    color: #faf6f0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+  .support-btn:hover {
+    background: #7a3d1c;
+  }
+
+  .product-id {
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    color: #8b6f47;
+    letter-spacing: 1px;
+  }
+
+  .footer {
+    background: #5a2d0c;
+    padding: 16px 20px;
+    text-align: center;
+  }
+  .footer p {
+    color: #c4956a;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+  .footer .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #e8d5c0;
+    margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-bar">
+  <h1>Nakshi Kantha Registry</h1>
+  <div class="tagline">Artisan Attribution &amp; Verification</div>
+</div>
+
+<div class="artisan-hero">
+  <div class="artisan-avatar">\u0995</div>
+</div>
+
+<div class="artisan-name">
+  <h2>Rashida Begum</h2>
+  <div class="location">Jamalpur, Mymensingh Division, Bangladesh</div>
+</div>
+
+<div class="verified-badge">
+  <span class="check">\u2713</span>
+  Verified Artisan &bull; Registered Since 2026
+</div>
+
+<div class="divider"></div>
+
+<div class="stats-bar">
+  <div class="stat"><span class="value">27</span><span class="label">Years of<br>Experience</span></div>
+  <div class="stat"><span class="value">340+</span><span class="label">Pieces<br>Created</span></div>
+  <div class="stat"><span class="value">3rd</span><span class="label">Generation<br>Artisan</span></div>
+</div>
+
+<div class="section">
+  <h3>About the Artisan</h3>
+  <p>Rashida learned Nakshi Kantha from her mother and grandmother in their village home. She has been stitching for over 27 years, specializing in lotus and paisley motifs inspired by the rivers and fields of Jamalpur. Her work keeps alive a family tradition spanning three generations.</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <h3>About This Piece</h3>
+  <p><strong>Title:</strong> "River Memory" \u2014 Nakshi Kantha Wall Hanging<br>
+  <strong>Technique:</strong> Hand-stitched running stitch on repurposed cotton<br>
+  <strong>Motifs:</strong> Lotus flowers, river waves, village landscape<br>
+  <strong>Time to Create:</strong> Approximately 3 months<br>
+  <strong>Story:</strong> This piece depicts the Brahmaputra river at dusk, as Rashida remembers it from her childhood \u2014 the golden light on water, boats returning home, lotus blooming along the banks.</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <h3>Artisan Statement</h3>
+  <p><em>"Every stitch carries a memory. When I work on a kantha, I am not just making fabric \u2014 I am telling the story of my home, my mother, and the land where I grew up. I hope the person who holds this piece can feel that connection."</em></p>
+</div>
+
+<button class="support-btn" onclick="alert('This is a demo. In the full system, this would link to a direct support channel for the artisan.')">Support This Artisan</button>
+
+<div class="product-id">
+  Product ID: NK-2026-JAM-0847 &bull; Verified \u2713
+</div>
+
+<div class="footer">
+  <p class="brand">Nakshi Kantha Digital Registry</p>
+  <p>Restoring authorship. Preserving heritage.<br>A pilot initiative for artisan attribution.</p>
+</div>
+
+</body>
+</html>
